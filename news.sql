@@ -1,9 +1,3 @@
--- --------------------------------------------------------
--- Host:                         localhost
--- Server version:               10.4.27-MariaDB - mariadb.org binary distribution
--- Server OS:                    Win64
--- HeidiSQL Version:             9.4.0.5125
--- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
@@ -46,7 +40,7 @@ CREATE TABLE IF NOT EXISTS `news_articles` (
   KEY `idx_read_scraped` (`is_read`,`scraped_at`),
   KEY `idx_scraped_at` (`scraped_at`),
   FULLTEXT KEY `ft_content` (`title`,`content`)
-) ENGINE=InnoDB AUTO_INCREMENT=9844 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Data exporting was unselected.
 -- Dumping structure for table ecn.news_sites
@@ -69,7 +63,7 @@ CREATE TABLE IF NOT EXISTS `news_sites` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `base_url` (`base_url`),
   KEY `idx_priority` (`is_priority`,`active`)
-) ENGINE=InnoDB AUTO_INCREMENT=5155 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Data exporting was unselected.
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
